@@ -1,7 +1,17 @@
 FROM apache/spark-py:latest
 
-FROM python:3.12-slim-trixie
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+# Pre-create tmp file for entrypoint (from prior fix)
+USER root
+RUN touch /tmp/java_opts.txt && chmod 777 /tmp/java_opts.txt && chown 0:0 /tmp/java_opts.txt
 
+RUN pip3 install --no-cache-dir delta-spark==3.2.0
+
+# Set exact PYTHONPATH for PySpark and py4j (no wildcard; version from Spark 3.5)
+ENV PYTHONPATH="/opt/spark/python:/opt/spark/python/lib/py4j-0.10.9.7-src.zip"
+
+# Copy your code
 COPY . /opt/spark/work-dir
 WORKDIR /opt/spark/work-dir
+
+# Retain base entrypoint
+ENTRYPOINT ["/opt/entrypoint.sh"]
