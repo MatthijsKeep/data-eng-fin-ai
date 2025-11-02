@@ -1,0 +1,23 @@
+[project]
+name = "data-eng-finance-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.9"
+dependencies = [
+    "dagster>=1.12.0",
+    "dagster-webserver>=1.12.0",
+    "dbt-core>=1.10.13",
+    "delta-spark>=4.0.0",
+    "duckdb>=1.4.1",
+    "fastapi>=0.120.4",
+    "pandas>=2.3.3",
+    "polars>=1.35.1",
+    "pyarrow>=22.0.0",
+    "pyspark>=4.0.1",
+    "pytest>=8.4.2",
+    "ruff>=0.14.3",
+    "torch>=2.9.0",
+    "transformers>=4.57.1",
+    "uvicorn>=0.38.0",
+]
