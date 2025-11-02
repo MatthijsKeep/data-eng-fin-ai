@@ -1,4 +1,4 @@
-FROM apache/spark-py:latest
+FROM apache/spark:3.5.7-python3
 
 # Pre-create tmp file for entrypoint (from prior fix)
 USER root
