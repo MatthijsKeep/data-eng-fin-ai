@@ -5,7 +5,7 @@ import sys
 import os
 
 # Print env for debugging
-endpoint = os.environ.get("spark.hadoop.fs.s3a.endpoint", "http://127.0.0.1:9000")
+endpoint = os.environ.get("spark.hadoop.fs.s3a.endpoint", "http://host.docker.internal:9000")
 print(f"s3 endpoint: {endpoint}")
 
 spark = SparkSession.builder \
