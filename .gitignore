@@ -2,3 +2,4 @@
 .venv
 .venv/*
 java_opts.txt
+*__pycache__*
