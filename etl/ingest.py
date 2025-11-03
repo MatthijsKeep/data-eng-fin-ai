@@ -1,7 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, to_timestamp
 from delta.tables import DeltaTable
-import sys
 import os
 
 # Print env for debugging
@@ -47,7 +46,8 @@ try:
     df_clean.write.format("delta").mode("overwrite").option("overwriteSchema", "true").save("s3a://finance-bucket/raw_delta")
     
     delta_table = DeltaTable.forPath(spark, "s3a://finance-bucket/raw_delta")
-    delta_table.optimize().executeVacuum()
+    delta_table.optimize().executeCompaction()
+    delta_table.vacuum()
     print("Delta write and optimization successful.")
 except Exception as e:
     print(f"Error during processing: {e}")
