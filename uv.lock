@@ -354,6 +354,8 @@ source = { virtual = "." }
 
 [package.dev-dependencies]
 core = [
+    { name = "dbt-core" },
+    { name = "dbt-duckdb" },
     { name = "delta-spark" },
     { name = "duckdb" },
     { name = "pandas" },
@@ -381,6 +383,8 @@ ml = [
 
 [package.metadata.requires-dev]
 core = [
+    { name = "dbt-core", specifier = ">=1.10.13" },
+    { name = "dbt-duckdb", specifier = ">=1.9.6" },
     { name = "delta-spark", specifier = ">=4.0.0" },
     { name = "duckdb", specifier = ">=1.4.1" },
     { name = "pandas", specifier = ">=2.3.3" },
@@ -478,6 +482,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/06/8c/abc5646deb0e2a040b6ea4b41e72747e1a43e4204af351188f611783084a/dbt_core-1.10.13.tar.gz", hash = "sha256:f3bd91f90318073c44c45fc14345a032a2fb4a20886b01df4623ac58bf236c09", size = 899172, upload-time = "2025-09-25T20:34:34.687Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/55/22/23f908133657775cbda0013c5626b64f7600a63a94815a6e617d6937c7e3/dbt_core-1.10.13-py3-none-any.whl", hash = "sha256:c15139493f822175892bfac58c53308884121760c4703fb41054e7b2de6ebd68", size = 985911, upload-time = "2025-09-25T20:34:32.647Z" },
+]
+
+[[package]]
+name = "dbt-duckdb"
+version = "1.9.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dbt-adapters" },
+    { name = "dbt-common" },
+    { name = "dbt-core" },
+    { name = "duckdb" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/74/90/0eafc5e38b0869315288be92a9b8acb721b08644548fcd56fc37d73e7ff4/dbt_duckdb-1.9.6.tar.gz", hash = "sha256:df49d3fff432e356c448865942d04cefef13afe419c3f095f1cf83e0101f973d", size = 117034, upload-time = "2025-09-08T20:10:17.044Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/45/4f830eadaac6f698694293840a55755f43d31af6018896e76517f8383c3e/dbt_duckdb-1.9.6-py3-none-any.whl", hash = "sha256:00cc7ead3aaf91a7e1117e1af68ed09fc6cc20d9a4f759e83cded53a38924295", size = 74904, upload-time = "2025-09-08T20:10:15.758Z" },
 ]
 
 [[package]]

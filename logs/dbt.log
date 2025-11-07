@@ -1,0 +1,120 @@
+[0m11:38:03.764897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105da4590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e83d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e83ed0>]}
+
+
+============================== 11:38:03.782007 | 826241b1-e222-46f9-b55d-20f3b603dfd6 ==============================
+[0m11:38:03.782007 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:38:03.782360 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'no_print': 'None', 'introspect': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt init finance_dbt', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'indirect_selection': 'eager', 'profiles_dir': '/Users/matthijskeep/.dbt', 'printer_width': '80', 'static_parser': 'True', 'fail_fast': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'use_colors': 'True'}
+[0m11:38:03.823012 [info ] [MainThread]: Creating dbt configuration folder at /Users/matthijskeep/.dbt
+[0m11:38:03.825289 [debug] [MainThread]: Starter project path: /Users/matthijskeep/Documents/programming/data-eng-finance-ai/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:38:03.829131 [info ] [MainThread]: 
+Your new dbt project "finance_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:38:03.829448 [info ] [MainThread]: Setting up your profile.
+[0m11:38:03.829735 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m11:38:03.830019 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.09590796, "process_in_blocks": "0", "process_kernel_time": 0.258144, "process_mem_max_rss": "142622720", "process_out_blocks": "0", "process_user_time": 1.103288}
+[0m11:38:03.830218 [debug] [MainThread]: Command `dbt init` failed at 11:38:03.830179 after 0.10 seconds
+[0m11:38:03.830367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f0a650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071156d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d6b350>]}
+[0m11:38:03.830513 [debug] [MainThread]: Flushing usage events
+[0m11:38:04.281051 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:41:36.287461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d23cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107963b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107963c50>]}
+
+
+============================== 11:41:36.290012 | c4f55959-1897-4490-8b82-1484946a09e0 ==============================
+[0m11:41:36.290012 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:41:36.290242 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'fail_fast': 'False', 'printer_width': '80', 'write_json': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'empty': 'None', 'no_print': 'None', 'profiles_dir': '/Users/matthijskeep/.dbt', 'version_check': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init finance_dbt', 'indirect_selection': 'eager', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'use_colors': 'True', 'static_parser': 'True'}
+[0m11:41:36.299357 [debug] [MainThread]: Starter project path: /Users/matthijskeep/Documents/programming/data-eng-finance-ai/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:41:36.302118 [info ] [MainThread]: 
+Your new dbt project "finance_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:41:36.302266 [info ] [MainThread]: Setting up your profile.
+[0m11:41:39.595084 [info ] [MainThread]: Profile finance_dbt written to /Users/matthijskeep/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m11:41:39.596492 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.3366988, "process_in_blocks": "0", "process_kernel_time": 0.101121, "process_mem_max_rss": "114950144", "process_out_blocks": "0", "process_user_time": 0.456904}
+[0m11:41:39.596681 [debug] [MainThread]: Command `dbt init` succeeded at 11:41:39.596640 after 3.34 seconds
+[0m11:41:39.596818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b0b100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107089910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b1a580>]}
+[0m11:41:39.596958 [debug] [MainThread]: Flushing usage events
+[0m11:41:40.034075 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:43:53.257828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10594fcb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a63b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a63c50>]}
+
+
+============================== 11:43:53.260834 | d0a815c0-4baf-46b8-bda3-96cb5c07a483 ==============================
+[0m11:43:53.260834 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:43:53.261072 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'no_print': 'None', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'quiet': 'False', 'profiles_dir': '/Users/matthijskeep/.dbt', 'introspect': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'target_path': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'log_path': 'logs'}
+[0m11:43:53.275876 [info ] [MainThread]: dbt version: 1.10.13
+[0m11:43:53.276057 [info ] [MainThread]: python version: 3.13.9
+[0m11:43:53.276154 [info ] [MainThread]: python path: /Users/matthijskeep/Documents/programming/data-eng-finance-ai/.venv/bin/python
+[0m11:43:53.276242 [info ] [MainThread]: os info: macOS-15.6.1-arm64-arm-64bit-Mach-O
+[0m11:43:53.372124 [info ] [MainThread]: Using profiles dir at /Users/matthijskeep/.dbt
+[0m11:43:53.372331 [info ] [MainThread]: Using profiles.yml file at /Users/matthijskeep/.dbt/profiles.yml
+[0m11:43:53.372452 [info ] [MainThread]: Using dbt_project.yml file at /Users/matthijskeep/Documents/programming/data-eng-finance-ai/dbt_project.yml
+[0m11:43:53.373120 [info ] [MainThread]: adapter type: duckdb
+[0m11:43:53.373257 [info ] [MainThread]: adapter version: 1.9.6
+[0m11:43:53.373368 [info ] [MainThread]: Configuration:
+[0m11:43:53.373462 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:43:53.373552 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:43:53.373639 [info ] [MainThread]: Required dependencies:
+[0m11:43:53.373759 [debug] [MainThread]: Executing "git --help"
+[0m11:43:53.385636 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:43:53.386021 [debug] [MainThread]: STDERR: "b''"
+[0m11:43:53.386135 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:43:53.386258 [info ] [MainThread]: Connection:
+[0m11:43:53.386365 [info ] [MainThread]:   database: dev
+[0m11:43:53.386450 [info ] [MainThread]:   schema: main
+[0m11:43:53.386527 [info ] [MainThread]:   path: dev.duckdb
+[0m11:43:53.386605 [info ] [MainThread]:   config_options: None
+[0m11:43:53.386680 [info ] [MainThread]:   extensions: None
+[0m11:43:53.386755 [info ] [MainThread]:   settings: {}
+[0m11:43:53.386832 [info ] [MainThread]:   external_root: .
+[0m11:43:53.386904 [info ] [MainThread]:   use_credential_provider: None
+[0m11:43:53.386979 [info ] [MainThread]:   attach: None
+[0m11:43:53.387051 [info ] [MainThread]:   filesystems: None
+[0m11:43:53.387122 [info ] [MainThread]:   remote: None
+[0m11:43:53.387195 [info ] [MainThread]:   plugins: None
+[0m11:43:53.387265 [info ] [MainThread]:   disable_transactions: False
+[0m11:43:53.387511 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m11:43:53.422220 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:43:53.466476 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:43:53.466657 [debug] [MainThread]: On debug: select 1 as id
+[0m11:43:53.466766 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:43:53.478311 [debug] [MainThread]: SQL status: OK in 0.012 seconds
+[0m11:43:53.478659 [debug] [MainThread]: On debug: Close
+[0m11:43:53.478945 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:43:53.479056 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:43:53.479140 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/matthijskeep/Documents/programming/data-eng-finance-ai/dbt_project.yml> not found
+
+[0m11:43:53.479371 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.25076604, "process_in_blocks": "0", "process_kernel_time": 0.135304, "process_mem_max_rss": "132235264", "process_out_blocks": "0", "process_user_time": 0.496283}
+[0m11:43:53.479538 [debug] [MainThread]: Command `dbt debug` failed at 11:43:53.479501 after 0.25 seconds
+[0m11:43:53.479654 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:43:53.479759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f4bbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a54b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c1ebe0>]}
+[0m11:43:53.479890 [debug] [MainThread]: Flushing usage events
+[0m11:43:53.934085 [debug] [MainThread]: An error was encountered while trying to flush usage events

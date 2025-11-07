@@ -9,7 +9,9 @@ dependencies = [  # Core runtime dependencies (empty or minimal for Spark focus)
 ]
 
 [dependency-groups]
-core = [  # For Spark/data-eng container: lightweight data tools
+core = [ # For Spark/data-eng container: lightweight data tools
+    "dbt-core>=1.10.13",
+    "dbt-duckdb>=1.9.6",
     "delta-spark>=4.0.0",
     "duckdb>=1.4.1",
     "pandas>=2.3.3",

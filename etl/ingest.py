@@ -4,7 +4,6 @@ from delta.tables import DeltaTable
 import os
 import tempfile  # For local testing
 
-# Print env for debugging
 endpoint = os.environ.get("spark.hadoop.fs.s3a.endpoint", "http://host.docker.internal:9000")
 print(f"s3 endpoint: {endpoint}")
 
@@ -26,7 +25,6 @@ def ingest_transactions(spark, input_path, output_path=None):
         print("Delta write and optimization successful.")
     return df_clean
 
-# Main entrypoint remains similar, but calls the function
 if __name__ == "__main__":
     endpoint = os.environ.get("spark.hadoop.fs.s3a.endpoint", "http://host.docker.internal:9000")
     print(f"s3 endpoint: {endpoint}")

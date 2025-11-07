@@ -1,0 +1,16 @@
+finance_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: local/finance.duckdb  # Local DuckDB file; change to your project path
+      extensions:
+        - httpfs  # Enables S3 access
+        - parquet  # For Parquet files in MinIO (common for data lakes)
+      settings:
+        s3_endpoint: localhost:9000  # Or host.docker.internal:9000 inside Docker
+        s3_region: us-east-1  # Default MinIO region; match your MinIO config
+        s3_access_key_id: "{{ env_var('MINIO_ACCESS_KEY') }}"  # Your MinIO root user
+        s3_secret_access_key: "{{ env_var('MINIO_SECRET_KEY') }}"  # Your MinIO root password
+        s3_use_ssl: false  # Localhost setup; set true for production
+        s3_url_style: path  # MinIO uses path-style URLs
